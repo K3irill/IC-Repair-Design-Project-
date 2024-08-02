@@ -303,7 +303,7 @@ h6 {
 .completed-projects__container {
   display: flex;
   justify-content: space-between;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 8px 0px 8px;
 }
 .completed-projects .completed-projects__container {
   display: flex;
