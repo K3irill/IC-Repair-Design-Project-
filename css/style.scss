@@ -1,3 +1,113 @@
 @import "nullStyle.scss";
 // --------------------------------------
+$background-color:#131313;
+$main-color:#E3B873;
+
+%button-set {
+    background-color: $main-color;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+
+  }
+
 // Настройки обёртки и основных классов;
+.wrapper{
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.__container{
+    max-width: 1256px;
+    margin: 0 auto;
+}
+// -HEADER------------------------------------------------------
+.header {
+    background-color: $background-color;
+    text-wrap: nowrap;
+    padding: 0px 10px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 37px 0px;
+    }
+    &_logo {
+        color: $main-color;
+        margin-right: 20px;
+    }
+
+    &__nav {
+        
+    }
+
+    &__activity {
+        display: flex;
+        align-items: center;
+        &_phone {
+            color: $main-color;
+            text-decoration: underline;
+        }
+
+        &_button {
+            margin-left: 45px;
+
+            @extend %button-set;
+            padding: 13px 33px;
+            
+        }
+    }
+    @media (max-width:1057px) {
+        .nav_link:last-child{
+            padding-right: 20px;
+        }.header__activity_button{
+            margin-left: 15px;
+        }
+    }
+    @media (max-width:1022px) {
+        .header__activity_button{
+            display: none;
+        }
+        
+    }
+    @media (max-width:854px) {
+        .header__activity_phone{
+            color: #fff;
+            text-decoration: none;
+        }
+        
+    }
+}
+.nav {
+
+    &_list {
+        display: flex;  
+    }
+
+    &_item {
+    }
+
+    &_link {
+        color: #fff;
+        &:last-child{
+            padding-right: 47px;
+        }
+    }
+    @media (max-width:1174px) {
+        .nav_link:last-child{
+            padding-right: 27px;
+        }
+    }
+
+    &__link-active {
+        color: $main-color;
+    }
+}
+@media (max-width:854px) {
+    .nav{
+        display: none;
+    }
+    
+}
