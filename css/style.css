@@ -273,4 +273,111 @@ h6 {
   .main-block__body__button-section_button-transparent {
     width: 100%;
   }
+}
+.completed-projects {
+  background-color: #131313;
+}
+.completed-projects_down-subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 90px;
+}
+.completed-projects__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
+}
+.completed-projects__cp-body-info {
+  padding-top: 150px;
+}
+.completed-projects__img-block {
+  padding-top: 100px;
+  margin-left: 20px;
+}
+.completed-projects__img-block_list {
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Yeseva+One";
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+.completed-projects__img-block_item:not(:last-child) {
+  margin-right: 60px;
+}
+.completed-projects__img-block_link {
+  color: rgba(255, 255, 255, 0.3);
+}
+.completed-projects__img-block_link-active {
+  color: #E3B873;
+  text-decoration: underline;
+}
+.completed-projects__img-block_img {
+  width: 100%;
+  border: 1px solid #2fa711;
+}
+
+.cp-body-info_title {
+  text-transform: uppercase;
+  font-size: 27px;
+  font-family: "Yeseva+One";
+  line-height: 137.037037037%;
+  color: #E3B873;
+  max-width: 200px;
+  padding-bottom: 34px;
+}
+.cp-body-info_text {
+  font-size: 14px;
+  line-height: 185.7142857143%;
+  max-width: 400px;
+}
+.cp-body-info__cp-main-info {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 25px;
+}
+.cp-body-info__slider {
+  display: flex;
+  align-items: center;
+  margin-top: 79px;
+}
+.cp-body-info__slider_btn-arrow {
+  background: transparent;
+}
+.cp-body-info__slider_point {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #383838;
+  position: relative;
+  top: -1px;
+  margin: 0px 5px 0px 5px;
+}
+.cp-body-info__slider_point-active {
+  background-color: #fff;
+}
+
+.point-1 {
+  margin-left: 30px;
+}
+
+.point-3 {
+  margin-right: 30px;
+}
+
+.cp-main-info {
+  padding-top: 42px;
+}
+.cp-main-info__cp-main-info-blocks {
+  display: flex;
+  flex-direction: column;
+}
+.cp-main-info__cp-main-info-blocks_title {
+  text-transform: uppercase;
+  color: #E3B873;
+  font-size: 18px;
+}
+.cp-main-info__cp-main-info-blocks_text {
+  max-width: 100px;
+  padding-top: 9px;
 }/*# sourceMappingURL=style.css.map */
