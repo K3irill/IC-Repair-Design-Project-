@@ -731,3 +731,133 @@ $main-color:#E3B873;
     }
     
 }
+// -requuest-forma---------------------------
+.page {
+    
+    &__request-forma {
+        
+    }
+}
+.request-forma {
+    margin-top: 200px;
+    position: relative;
+    &_ibg{
+        position: absolute;
+        object-fit: contain;
+        max-width: 100%;
+        height: 100%;
+        top:0;
+        
+        z-index: -1;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__points-wrapp {
+    }
+
+    &__point {
+        display: flex;
+        align-items: center;
+        padding-bottom: 100px;
+
+        &_num {
+            border: 4px solid #ffffff;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: $main-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &_text {
+            color: #131313;
+            padding-left: 17px;
+            max-width: 316px;
+        }
+    }
+
+    &__form-wrapp {
+        background-color: $background-color;
+        width: 506px;
+        height: 509px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_title {
+            text-align: center;
+            max-width: 297px;
+            padding-top: 28px;
+            padding-bottom: 39px;
+        }
+        &_btn{
+            @extend %button-set;
+            padding: 18px 22px;
+            justify-self: flex-end;
+            border-radius: 0;
+            text-transform: uppercase;
+            position: relative;
+            top: 40px;
+            left: 100px;
+        }
+        &_label-text {
+            
+        }
+        &_forma{
+            display: flex;
+            flex-direction: column;
+        }
+        &_forma input{
+            background-color: $background-color;
+            border-bottom: 1px solid #747474;
+            
+        }
+        &_input-name{
+            margin-bottom: 48px;
+            width: 408px;
+        }
+        &_input-email{
+        }
+        &_input-tel {
+            margin-bottom: 48px;
+            // width: 30rem;
+        }
+    }
+}
+.piggy-bank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: -100px;
+    &_img {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-color: $main-color;
+        text-align: center;
+        position: relative;
+        & img{
+            position: absolute;
+            top: 17px;
+            left: 17px;
+        }
+        margin-right: 10px;
+    }
+
+    &_text {
+        max-width: 184px;
+        color:$main-color;
+        font-size: 16px;
+    }
+}
+
+.label-checkbox {
+}

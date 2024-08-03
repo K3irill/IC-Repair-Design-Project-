@@ -88,7 +88,7 @@ h6 {
   font-weight: 400;
 }
 
-.form-block_input-button, .main-block__body__button-section_button-transparent, .main-block__body__button-section_button, .header__activity_button {
+.request-forma__form-wrapp_btn, .form-block_input-button, .main-block__body__button-section_button-transparent, .main-block__body__button-section_button, .header__activity_button {
   background-color: #E3B873;
   border-radius: 2px;
   color: #fff;
@@ -720,4 +720,109 @@ h6 {
     width: 290px;
     height: 266px;
   }
+}
+.request-forma {
+  margin-top: 200px;
+  position: relative;
+}
+.request-forma_ibg {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.request-forma__container {
+  display: flex;
+  justify-content: space-between;
+}
+.request-forma__point {
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.request-forma__point_num {
+  border: 4px solid #ffffff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.request-forma__point_text {
+  color: #131313;
+  padding-left: 17px;
+  max-width: 316px;
+}
+.request-forma__form-wrapp {
+  background-color: #131313;
+  width: 506px;
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.request-forma__form-wrapp_title {
+  text-align: center;
+  max-width: 297px;
+  padding-top: 28px;
+  padding-bottom: 39px;
+}
+.request-forma__form-wrapp_btn {
+  padding: 18px 22px;
+  justify-self: flex-end;
+  border-radius: 0;
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+.request-forma__form-wrapp_forma {
+  display: flex;
+  flex-direction: column;
+}
+.request-forma__form-wrapp_forma input {
+  background-color: #131313;
+  border-bottom: 1px solid #747474;
+}
+.request-forma__form-wrapp_input-name {
+  margin-bottom: 48px;
+  width: 408px;
+}
+.request-forma__form-wrapp_input-tel {
+  margin-bottom: 48px;
+}
+
+.piggy-bank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  left: -100px;
+}
+.piggy-bank_img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+.piggy-bank_img img {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+.piggy-bank_text {
+  max-width: 184px;
+  color: #E3B873;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
