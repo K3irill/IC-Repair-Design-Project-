@@ -1110,6 +1110,17 @@ h6 {
     height: 310px;
   }
 }
+@media (max-width: 688px) {
+  .locate-block__form-wrap_title {
+    margin-top: 90px;
+  }
+  .locate-block_map {
+    margin-top: 90px;
+  }
+  .locate-block_title {
+    padding: 0;
+  }
+}
 @media (max-width: 1023px) {
   .locate-block {
     background: #131313;
@@ -1122,4 +1133,7 @@ h6 {
   .located {
     order: 2;
   }
+}
+.locate-block__slider {
+  margin-top: -30px;
 }/*# sourceMappingURL=style.css.map */

@@ -384,7 +384,7 @@ $main-color:#E3B873;
             width: 100%;
             position: absolute;
             z-index: 0;
-
+            
         }
 
         &_btn {
@@ -1211,7 +1211,15 @@ $main-color:#E3B873;
     }
    
 }
-
+@media (max-width:688px) {
+    .locate-block__form-wrap_title{
+        margin-top: 90px;
+    }.locate-block_map{
+        margin-top: 90px;
+    }.locate-block_title{
+        padding: 0;
+    }
+}
 
 @media (max-width:1023px) {
     .locate-block{
@@ -1225,6 +1233,8 @@ $main-color:#E3B873;
         order: 2;
     }
 }
-
+.locate-block__slider{
+    margin-top: -30px;
+}
 
 
