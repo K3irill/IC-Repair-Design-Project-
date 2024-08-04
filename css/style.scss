@@ -1099,27 +1099,81 @@ $main-color:#E3B873;
 .locate-block {
 
     &_forma {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 48px;
+        
     }
 
+    &__form-wrap input{
+        background-color: #131313;
+        border-bottom: 1px solid #636363;
+        color: #fff;
+        &::placeholder{
+            color: #fff;
+        }
+        
+    }
+    
+    
     &__form-wrap {
-
+        width: 883px;
+        height: 445px;
+        background-color: $background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -210px;
+        position: relative;
+        z-index: 10;
+        &__cont{
+            display: flex;
+            flex-direction: column;
+            width: 516px;
+            
+        }
         &_title {
+            text-align: center;
+            padding-top: 34px;
+            padding-bottom: 45px;
         }
 
         &_span {
+            color: #747474;
         }
 
         &_input-name {
+            width: 240px;
         }
 
         &_input-phone {
+            width: 240px;
+            
         }
 
         &_input-question {
+            
+            
         }
 
         &_btn {
+            @extend %button-set;
+            width: 200px;
+            height: 51px;
+            border-radius: 0;
+            justify-self: center;
+            align-self: center;
+            margin-top: 50px;
+            transition: 0.1s;
+            &:active{
+                transform: scale(0.99);
+                box-shadow: inset 1px 1px 10px #131313;
+                transition: 0.1s;
+            }
         }
     }
 }
 
+@media (max-width:1023px) {
+    
+}
