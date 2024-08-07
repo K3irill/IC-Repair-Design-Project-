@@ -100,9 +100,14 @@ const truncate = (text, length) =>{
 
 console.log(truncate("Hello, World! sounds like shit, so i wanna print: Hello, suckers!", 13));
 
-const getHiddenCard = (card, num) =>{
+const getHiddenCard = (card, num = 4) =>{
     let slicerCard = card.slice(12);
-    let hidenCard = '*'.repeat(num) + slicerCard;
-    return hidenCard;
+    let hiddenCard = '*'.repeat(num) + slicerCard;
+    return hiddenCard;
 }
 console.log(getHiddenCard('1234567812345678', 2));
+
+
+const arrowGetHiddenCard = (card, num = 4) => '*'.repeat(num) + card.slice(12);
+console.log(arrowGetHiddenCard('1234567812345678', 2));
+
