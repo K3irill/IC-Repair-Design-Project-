@@ -192,3 +192,113 @@ const printNumbers = (initialNumber) => {
   console.log("finished!");
 };
 printNumbers(5);
+
+//--------------------------------------------------------------
+const multiplyNumbersFromRange = (start, finish) => {
+  let i = start;
+  let multiply = 1;
+  while (i <= finish) {
+    multiply *= i;
+    i += 1;
+  }
+  return multiply;
+};
+console.log(multiplyNumbersFromRange(3, 5));
+//----------------------------------------------------------------
+const joinNumbersFromRange = (first, finish) => {
+  let i = first;
+  let str = "";
+  while (i <= finish) {
+    str += i;
+    i++;
+  }
+  return str;
+};
+console.log(joinNumbersFromRange(3, 10));
+//-----------------------------------------------------------------
+const mySubstr = (str, lenght) => {
+  let i = 0;
+  let result = "";
+  while (i < lenght) {
+    result += str[i];
+    i++;
+  }
+  return result;
+};
+console.log(mySubstr("text24124", 1));
+
+function countChars(str, char) {
+  let i = 0;
+  let count = 0;
+  while (i < str.length) {
+    if (char === str[i].toUpperCase() || char === str[i].toLowerCase()) {
+      count += 1;
+    }
+    i++;
+  }
+  return count;
+}
+console.log(countChars("text", "t"));
+
+const str = "HELLO";
+let result = "";
+let i = 0;
+while (i < str.length) {
+  const current = str[i];
+  ++i;
+  result = `${result}${current.toLowerCase()}`;
+  i++;
+}
+// --------------------------------------------------------------------------
+const makeItFunny = (str, num) => {
+  let i = 0;
+  let result = "";
+  while (i < str.length) {
+    const current = str[i];
+    if ((i + 1) % num === 0) {
+      result = `${result}${current.toUpperCase()}`;
+    } else {
+      result = `${result}${current}`;
+    }
+    i++;
+  }
+  return result;
+};
+console.log(makeItFunny("I never look back", 3));
+// ᓚᘏᗢ--------------------------------------------------------------------------
+function compareRegister(a, b) {
+  if (a.match(/[a-z]/) && b.match(/[a-z]/)) {
+    return 1;
+  } else if (a.match(/[A-Z]/) && b.match(/[A-Z]/)) {
+    return 1;
+  } else if (a.match(/[A-Z]/) && b.match(/[a-z]/)) {
+    return 0;
+  } else if (a.match(/[a-z]/) && b.match(/[A-Z]/)) {
+    return 0;
+  } else return -1;
+}
+console.log(compareRegister(":", "A"));
+//--------------------------------------------------------------------------------------
+const encrypt = (str) =>{
+  let result = '';
+  for(let i = 0; i < str.length; i += 2 ){
+    let currentChar = str[i + 1] || '';
+    result += `${currentChar}${str[i]}`;
+  }
+  return result;
+}
+console.log(encrypt("attack"));
+//---------REVERSERS---------------------------------------------------------------------
+const reverseInt = (num) =>{
+  let numToString = String(num);
+  return numToString.split('').reverse().join('')
+}
+console.log(reverseInt(12344567));
+
+function niceReverse (value) {
+  var toString = String(value);
+  for (var i = toString.length - 1, result = ''; i >= 0; result += toString[i--]) { }
+  return toString;
+  }
+console.log(niceReverse(1316904));
+//-----------------------------------------------------------------------------------------
