@@ -400,3 +400,59 @@ console.log(countZeros)
 //             }
 //         }
 //     }
+
+// ╰(*°▽°*)╯    task 8
+
+let skillMap = new Map([
+
+  ['name', 'John'],
+
+  ['age', '18'],
+
+  ['height', '178cm'],
+
+  ['weight', '75kg'],
+
+  ['foot-size', '40']
+]);
+for (let values of skillMap.values()){
+  for (let keys of skillMap.keys()){
+    console.log(`Key - ${keys}, value - ${values} `);
+  }
+}
+
+//-------------EE--NN--DD--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+let map = new Map();
+
+map.set('key', 'map object');
+map.set('door', 'this is');
+console.log(map.get('key'));
+console.log(map.size);
+
+let fruits = new Map([
+
+  ["apple", "green"],
+
+  ["strawberry", "red"],
+
+  ["blueberry",    "blue"]
+
+]);
+
+for (let i of fruits.keys()){
+  console.log(i);
+}
+for (let j of fruits.values()){
+  console.log(j);
+}
+for (let l of fruits){
+  console.log(l);
+}
