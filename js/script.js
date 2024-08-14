@@ -1,7 +1,7 @@
 "use strict";
 
 console.log(
-  "Hello, World! sounds like shit, so i wanna print: Hello, suckers!"
+  "Hello, World! sounds like shit, so i wanna print: Hello, Geeks!"
 );
 
 var noUse = "it's var";
@@ -421,15 +421,6 @@ for (let values of skillMap.values()){
   }
 }
 
-//-------------EE--NN--DD--------------------------------------------------------------------------
-
-
-
-
-
-
-
-
 let map = new Map();
 
 map.set('key', 'map object');
@@ -456,3 +447,80 @@ for (let j of fruits.values()){
 for (let l of fruits){
   console.log(l);
 }
+
+const userFullName = prompt("Enter your First and Second name");
+
+const obj = new Object();
+
+const doArrFromStr = (arr) => {
+  return arr.split(" ");
+};
+
+obj.firstName = doArrFromStr(userFullName)[0];
+obj.secondName = doArrFromStr(userFullName)[1];
+
+function sayHi() {
+  return alert(`Hi ${obj.firstName} ${obj.secondName}!`);
+}
+
+sayHi();
+
+const celsTemp = prompt("How many digrees Celsius");
+
+function translateCels(cels) {
+  return (cels * 9) / 5 + 32;
+};
+
+function answerCels() {
+  return alert(`${celsTemp} degrees Celsius equal ${translateCels(celsTemp)} degrees Fahrenheit`);
+}
+answerCels()
+
+const xNum = Number(prompt('enter variable "X" '));
+
+const solve = (x) => {
+  let y = 0;
+  return y = (4 * x ** 2 + 18 - 23 * x) / ((5 / 9) * x + 18 * ((x **  3 / 33) * x)) + ((x * 15) / 12);
+};
+alert(solve(xNum));
+
+a = 12;
+b = 'number';
+c = false;
+d = null;
+e = undefined;
+f = 123.34;
+g = '1' + 1;
+h = 15 / 0;
+i = -'5';
+j = 5 == '5'
+
+at = typeof a === 'number'; // true
+bt = typeof b ==='string'; // false, а нужно чтобы все были true
+ct = typeof c === 'boolean';
+dt = typeof d === 'object';
+et = typeof e === 'undefined';
+ft = typeof f === 'number';
+gt = typeof g === 'string';
+ht = typeof h === 'number';
+it = typeof i === 'number';
+jt = typeof j === 'boolean';
+
+alert(at && bt && ct && dt && et && ft && gt && ht && it && jt);
+
+const NDS = 0.20
+const NDFL = 0.13
+const EXCISE = 0.1
+let RENT = 40000
+let FOOD = 15000
+let OTHER = 15000
+let MY_SALARY = 120000
+
+const ndflTax = MY_SALARY * NDFL;
+const mySalaryNet = MY_SALARY - ndflTax;
+const otherTaxes = mySalaryNet * (NDS + EXCISE);
+let totalAvailable = mySalaryNet - otherTaxes;
+totalAvailable -= FOOD + OTHER + RENT
+alert('Зарплата ' + MY_SALARY + ' рублей')
+alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
+alert('Осталось ' + totalAvailable + ' рублей')
