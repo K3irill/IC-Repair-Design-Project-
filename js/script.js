@@ -524,3 +524,107 @@ totalAvailable -= FOOD + OTHER + RENT
 alert('Зарплата ' + MY_SALARY + ' рублей')
 alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
 alert('Осталось ' + totalAvailable + ' рублей')
+
+const catheterA = 24;
+const catheterB = 18;
+const HypotenuseC = 30;
+
+function isTriangle(a, b, c) {
+  if (a ** 2 + b ** 2 !== c ** 2) {
+    return "Это не прямоугольный треугольник!";
+  } else {return "Это прямоугольный треугольник!"};
+}
+console.log(isTriangle(catheterA, catheterB, HypotenuseC));
+
+const num1 = 10;
+const num2 = 33;
+const num3 = 2;
+
+function maxNum(a, b, c) {
+    Math.max(a, b, c);
+};
+
+const userNum = 11;
+
+function isOddOrEven(num) {
+    if(num % 2 === 0){
+        return `Number ${num} is even.`
+    }return `Number ${num} is odd.`
+}
+console.log(isOddOrEven(userNum));
+
+function oddAndEven(start, end) {
+  for (let i = start; i <= end; i++) {
+    if (i % 2 !== 0 && i <= end / 2) {
+      console.log(i);
+    } else if (i % 2 === 0 && i >= end / 2) {
+      console.log(i);
+    }
+  }
+}
+console.log(oddAndEven(0, 10));
+
+let userNums;
+
+let result1 = 0;
+while (userNums != 0) {
+  userNums = +prompt("Your num", 0);
+  result1 += parseInt(userNums);
+}
+alert(result1);
+
+let neededNum = 10;
+let currentNum = 0;
+
+do {  
+    while (currentNum != neededNum) {  
+        currentNum = +prompt('Введите ' + neededNum);  
+    }  
+    neededNum *= 2;  
+} while (currentNum < 100);  
+alert('Спасибо!');
+
+function countDown(n) {
+    for(let i = n; i > 0; i--){
+        console.log(i);
+        
+    }
+}
+countDown(10)
+
+function getPercents(percents, number) {
+    return (percents * number / 100)
+}
+console.log(getPercents(30, 200));
+
+function repeatWord(word, count) {
+    let i = 1;
+    let result = '';
+    while(i <= count){
+        result += `${word}${i}, `;
+        i++
+    }
+    result = result.split('');
+    result.splice((result.length - 2), 1)
+    result = result.join('');
+    return  result
+}
+console.log(repeatWord('laptop', 3))
+
+function createAdder(a) {
+  return function addA(b) {
+    return  a + b;
+  } 
+}
+
+const add5 = createAdder(5);
+console.log( add5(5) ) // Должно получиться 10
+console.log( add5(12) ) // Должно получиться 17
+
+function getMonth(n) {
+    const arr = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+
+    return arr[n - 1] || 'ошибка'
+}
+
+console.log(getMonth(12))
