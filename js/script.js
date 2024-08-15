@@ -123,36 +123,76 @@ const capitalize = (str) => {
 console.log(capitalize("hello"));
 //--------------------------------------------------------------------------------
 
-const isStrongPassword = (password) =>{
+const isStrongPassword = (password) => {
   const length = password.length;
   return length >= 8 && length <= 20;
 };
-console.log(isStrongPassword('qwerty24'));
+console.log(isStrongPassword("qwerty24"));
 
 const getLetter = (str, value) => {
-  if (str[value - 1]){
-    return str[value - 1]
-  }else if(str[value - 1] === undefined){
-    return '';
+  if (str[value - 1]) {
+    return str[value - 1];
+  } else if (str[value - 1] === undefined) {
+    return "";
   }
-}
-console.log(getLetter('Backspace', 2));
+};
+console.log(getLetter("Backspace", 2));
 
-function normalizeUrl(adress){
-  if(adress.startsWith("https://")){
+function normalizeUrl(adress) {
+  if (adress.startsWith("https://")) {
     return adress;
-  }else 
-    return 'https://' + adress;
+  } else return "https://" + adress;
 }
-console.log(normalizeUrl("google.com"))
+console.log(normalizeUrl("google.com"));
 
-function convertText(str){
+function convertText(str) {
   //  (str[0] === str[0].toUpperCase()) ? str : str.split('').reverse().join('');
-  if (str === ''){
-    return ''
-  }else if (str[0] !== str[0].toUpperCase()){
-    return str.split('').reverse().join('');
-  }else 
-    return str;
+  if (str === "") {
+    return "";
+  } else if (str[0] !== str[0].toUpperCase()) {
+    return str.split("").reverse().join("");
+  } else return str;
 }
-console.log(convertText('hello'))
+console.log(convertText("hello"));
+
+const speedCar = (num) => {
+  let speed;
+
+  switch (num) {
+    case 1:
+      speed = 20;
+      break;
+    case 2:
+      speed = 40;
+      break;
+    case 3:
+      speed = 80;
+      break;
+    case 4:
+      speed = 120;
+      break;
+    case 5:
+      speed = 160;
+      break;
+
+    default:
+      speed = 0;
+  }
+  return speed;
+};
+console.log(speedCar(3) );
+
+function match(firstStr, secondStr) {
+  let a = firstStr.toLowerCase();
+  let b = secondStr.toLowerCase();
+
+  return a === b;
+}
+console.log(match("hELLO", "Hello"));
+
+function nameChapter(link) {
+  let a = link.split("");
+  a = a.slice(21, link.length - 1).join("");
+  return a;
+}
+console.log(nameChapter("https://reddit.com/r/название_раздела/"));
