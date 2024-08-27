@@ -1,7 +1,7 @@
 "use strict";
 
 console.log(
-  "Hello, World! sounds like shit, so i wanna print: Hello, suckers!"
+  "Hello, World! sounds like shit, so i wanna print: Hello, Geeks!"
 );
 
 var noUse = "it's var";
@@ -421,15 +421,6 @@ for (let values of skillMap.values()){
   }
 }
 
-//-------------EE--NN--DD--------------------------------------------------------------------------
-
-
-
-
-
-
-
-
 let map = new Map();
 
 map.set('key', 'map object');
@@ -456,3 +447,184 @@ for (let j of fruits.values()){
 for (let l of fruits){
   console.log(l);
 }
+
+const userFullName = prompt("Enter your First and Second name");
+
+const obj = new Object();
+
+const doArrFromStr = (arr) => {
+  return arr.split(" ");
+};
+
+obj.firstName = doArrFromStr(userFullName)[0];
+obj.secondName = doArrFromStr(userFullName)[1];
+
+function sayHi() {
+  return alert(`Hi ${obj.firstName} ${obj.secondName}!`);
+}
+
+sayHi();
+
+const celsTemp = prompt("How many digrees Celsius");
+
+function translateCels(cels) {
+  return (cels * 9) / 5 + 32;
+};
+
+function answerCels() {
+  return alert(`${celsTemp} degrees Celsius equal ${translateCels(celsTemp)} degrees Fahrenheit`);
+}
+answerCels()
+
+const xNum = Number(prompt('enter variable "X" '));
+
+const solve = (x) => {
+  let y = 0;
+  return y = (4 * x ** 2 + 18 - 23 * x) / ((5 / 9) * x + 18 * ((x **  3 / 33) * x)) + ((x * 15) / 12);
+};
+alert(solve(xNum));
+
+a = 12;
+b = 'number';
+c = false;
+d = null;
+e = undefined;
+f = 123.34;
+g = '1' + 1;
+h = 15 / 0;
+i = -'5';
+j = 5 == '5'
+
+at = typeof a === 'number'; // true
+bt = typeof b ==='string'; // false, а нужно чтобы все были true
+ct = typeof c === 'boolean';
+dt = typeof d === 'object';
+et = typeof e === 'undefined';
+ft = typeof f === 'number';
+gt = typeof g === 'string';
+ht = typeof h === 'number';
+it = typeof i === 'number';
+jt = typeof j === 'boolean';
+
+alert(at && bt && ct && dt && et && ft && gt && ht && it && jt);
+
+const NDS = 0.20
+const NDFL = 0.13
+const EXCISE = 0.1
+let RENT = 40000
+let FOOD = 15000
+let OTHER = 15000
+let MY_SALARY = 120000
+
+const ndflTax = MY_SALARY * NDFL;
+const mySalaryNet = MY_SALARY - ndflTax;
+const otherTaxes = mySalaryNet * (NDS + EXCISE);
+let totalAvailable = mySalaryNet - otherTaxes;
+totalAvailable -= FOOD + OTHER + RENT
+alert('Зарплата ' + MY_SALARY + ' рублей')
+alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
+alert('Осталось ' + totalAvailable + ' рублей')
+
+const catheterA = 24;
+const catheterB = 18;
+const HypotenuseC = 30;
+
+function isTriangle(a, b, c) {
+  if (a ** 2 + b ** 2 !== c ** 2) {
+    return "Это не прямоугольный треугольник!";
+  } else {return "Это прямоугольный треугольник!"};
+}
+console.log(isTriangle(catheterA, catheterB, HypotenuseC));
+
+const num1 = 10;
+const num2 = 33;
+const num3 = 2;
+
+function maxNum(a, b, c) {
+    Math.max(a, b, c);
+};
+
+const userNum = 11;
+
+function isOddOrEven(num) {
+    if(num % 2 === 0){
+        return `Number ${num} is even.`
+    }return `Number ${num} is odd.`
+}
+console.log(isOddOrEven(userNum));
+
+function oddAndEven(start, end) {
+  for (let i = start; i <= end; i++) {
+    if (i % 2 !== 0 && i <= end / 2) {
+      console.log(i);
+    } else if (i % 2 === 0 && i >= end / 2) {
+      console.log(i);
+    }
+  }
+}
+console.log(oddAndEven(0, 10));
+
+let userNums;
+
+let result1 = 0;
+while (userNums != 0) {
+  userNums = +prompt("Your num", 0);
+  result1 += parseInt(userNums);
+}
+alert(result1);
+
+let neededNum = 10;
+let currentNum = 0;
+
+do {  
+    while (currentNum != neededNum) {  
+        currentNum = +prompt('Введите ' + neededNum);  
+    }  
+    neededNum *= 2;  
+} while (currentNum < 100);  
+alert('Спасибо!');
+
+function countDown(n) {
+    for(let i = n; i > 0; i--){
+        console.log(i);
+        
+    }
+}
+countDown(10)
+
+function getPercents(percents, number) {
+    return (percents * number / 100)
+}
+console.log(getPercents(30, 200));
+
+function repeatWord(word, count) {
+    let i = 1;
+    let result = '';
+    while(i <= count){
+        result += `${word}${i}, `;
+        i++
+    }
+    result = result.split('');
+    result.splice((result.length - 2), 1)
+    result = result.join('');
+    return  result
+}
+console.log(repeatWord('laptop', 3))
+
+function createAdder(a) {
+  return function addA(b) {
+    return  a + b;
+  } 
+}
+
+const add5 = createAdder(5);
+console.log( add5(5) ) // Должно получиться 10
+console.log( add5(12) ) // Должно получиться 17
+
+function getMonth(n) {
+    const arr = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+
+    return arr[n - 1] || 'ошибка'
+}
+
+console.log(getMonth(12))
