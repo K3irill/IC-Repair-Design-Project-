@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="/js/script.js?v=1"></script>
+    <!-- <script src="/js/script.js?v=1"></script> -->
   </head>
   <body>
     <div class="wrapper">
@@ -92,7 +92,7 @@
               <div class="cp-body-info__img-slider">
                 <img
                   class="cp-body-info__img-slider_img"
-                  src="img/main/completed projects/rostov admiral.png"
+                  src="img/main/completed projects/slide1.png"
                   alt=""
                 />
                 <button
@@ -147,7 +147,7 @@
                 </div>
               </div>
               <div class="cp-body-info__slider">
-                <button class="cp-body-info__slider_btn-arrow">
+                <button id="btnSliderBack" class="cp-body-info__slider_btn-arrow">
                   <img
                     src="img/main/completed projects/back-arr.svg"
                     alt="<----"
@@ -158,7 +158,7 @@
                 ></span>
                 <span class="cp-body-info__slider_point point-2"></span>
                 <span class="cp-body-info__slider_point point-3"></span>
-                <button class="cp-body-info__slider_btn-arrow">
+                <button id="btnSliderBack" class="cp-body-info__slider_btn-arrow">
                   <img
                     src="img/main/completed projects/next-arr.svg"
                     alt="---->"
@@ -188,7 +188,17 @@
               </ul>
               <img
                 class="completed-projects__img-block_img"
-                src="img/main/completed projects/rostov admiral.png"
+                src="img/main/completed projects/slide1.png"
+                alt=""
+              />
+              <img
+                class="completed-projects__img-block_img hidden"
+                src="img/main/completed projects/slide2.png"
+                alt=""
+              />
+              <img
+                class="completed-projects__img-block_img hidden"
+                src="img/main/completed projects/slide3.png"
                 alt=""
               />
             </div>
@@ -886,5 +896,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/slider.js"></script>
   </body>
 </html>
