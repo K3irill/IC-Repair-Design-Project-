@@ -29,7 +29,9 @@ function changeSlideBack() {
 
   toggleSlide(currentSlideIndex, true);
 }
-
+setInterval(() => {
+  changeSlideNext()
+}, 10000);
 btnSliderNext.addEventListener("click", changeSlideNext);
 btnSliderBack.addEventListener("click", changeSlideBack);
 
