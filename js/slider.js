@@ -30,19 +30,17 @@ function changeSlideBack() {
   toggleSlide(currentSlideIndex, true);
 }
 
-function changeSlideByIndex(index, link) {
+function changeSlideByIndex(index) {
   toggleSlide(currentSlideIndex, false);
   currentSlideIndex = index;
   toggleSlide(currentSlideIndex, true);
-  link.preventDefault();
-  link.stopPropagation();
 }
 
 sliderPoints.forEach((point, index) => {
   point.addEventListener("click", () => changeSlideByIndex(index));
 });
 sliderLinks.forEach((link, index) => {
-  link.addEventListener("click", () => changeSlideByIndex(index, link));
+  link.addEventListener("click", () => changeSlideByIndex(index));
 });
 
 setInterval(() => {
