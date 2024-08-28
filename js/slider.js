@@ -29,6 +29,22 @@ function changeSlideBack() {
 
   toggleSlide(currentSlideIndex, true);
 }
+
+function changeSlideByIndex(index, link) {
+  toggleSlide(currentSlideIndex, false);
+  currentSlideIndex = index;
+  toggleSlide(currentSlideIndex, true);
+  link.preventDefault();
+  link.stopPropagation();
+}
+
+sliderPoints.forEach((point, index) => {
+  point.addEventListener("click", () => changeSlideByIndex(index));
+});
+sliderLinks.forEach((link, index) => {
+  link.addEventListener("click", () => changeSlideByIndex(index, link));
+});
+
 setInterval(() => {
   changeSlideNext()
 }, 10000);
