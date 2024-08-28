@@ -289,12 +289,14 @@ $main-color:#E3B873;
         }
 
         &_item {
+            cursor: pointer;
             &:not(:last-child){
                 margin-right: 60px;
             }
         }
 
         &_link {
+            
             color: rgba(255, 255, 255, 0.3);
         }
 
@@ -316,6 +318,7 @@ $main-color:#E3B873;
         
     }
 }
+
 .cp-body-info {
 
     &_title {
@@ -354,7 +357,6 @@ $main-color:#E3B873;
         margin-top: 79px;
         &_btn-arrow {
             background: transparent;
-
         }
 
         &_point {
@@ -366,6 +368,7 @@ $main-color:#E3B873;
             position: relative;
             top: -1px;
             margin: 0px 5px 0px 5px;
+
         }
 
         &_point-active {

@@ -331,6 +331,9 @@ h6 {
   font-weight: 600;
   padding-bottom: 50px;
 }
+.completed-projects__img-block_item {
+  cursor: pointer;
+}
 .completed-projects__img-block_item:not(:last-child) {
   margin-right: 60px;
 }
